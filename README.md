@@ -83,3 +83,11 @@ To solve this problem I had to run docker desktop app and run 'get-started' imag
 ```
 This shows, that connection between container and local machine was established successfully.  
 All used files and screenshots with implementation/verification can be found in task3/ScreensTask3
+
+
+## Task 5
+**Name** - Unit Testing  
+**Preparation** - Copy the python module from the task  
+**Implementation** - I've written test using unittest module for python. These were simple equality tests. As a result we got all 4 tests passed, which means that functions work as expected  
+**Troubleshooting** - No troubles in this one  
+**Verification** - The screen in the task5/ScreensTask5 shows the result
