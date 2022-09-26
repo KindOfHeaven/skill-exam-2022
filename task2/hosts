@@ -1,0 +1,2 @@
+[webservers]
+192.168.0.107 ansible_host=192.168.0.107 ansible_ssh_user=kirillten ansible_ssh_pass=ansible123

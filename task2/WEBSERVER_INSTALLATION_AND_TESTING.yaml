@@ -1,0 +1,18 @@
+- hosts: webservers
+  become: no
+  tasks:
+     - name: INSTALL NGINX
+       homebrew: name=nginx state=latest
+       notify:
+          - nginx systemd	
+     - name: TEST NGINX
+       uri:
+          url: http://{{ ansible_host }}
+          method: GET
+
+  handlers:
+     - name: nginx systemd
+       systemd:
+          name: nginx
+          enabled: yes
+          state: started 
