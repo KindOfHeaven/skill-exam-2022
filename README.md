@@ -68,4 +68,18 @@ So, I had to look for workaround and, as I found out, there is a repo with sshpa
 All used files and screenshots with implementation/verification can be found in task2/ScreensTask2  
 
 ## Task 3
-**Name** - 
+**Name** - Docker  
+**Preparation** - I had to install docker. I did it based on the official docs for Apple Silicon Mac  
+**Implementation** - To implement this task, I've copied necessary files Dockerfile and startup.sh from ```https://github.com/cturra/docker-ntp```. After that, I've modified Dockerfile to find the right path to startup.sh. Then, I had to build and run docker using:
+```
+docker build -t randntp .
+```
+**Troubleshooting** - I faced a problem with using docker on osx. That is a basic problem for this os as turned out.
+To solve this problem I had to run docker desktop app and run 'get-started' image. After that everything works fine.  
+**Verification** - To verify, that connection was established I ran 
+``` sudo sntp -sS 127.0.0.1 ``` which is macos analog for ntpdate. The result is below:
+```
++0.057098 +/- 0.012743 127.0.0.1 127.0.0.1
+```
+This shows, that connection between container and local machine was established successfully.  
+All used files and screenshots with implementation/verification can be found in task3/ScreensTask3
