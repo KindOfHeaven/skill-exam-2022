@@ -2,7 +2,7 @@
 Ten Kirill 244024 N42503c
 
 ## Task 1
-**Name** - GitHub Skills Test 
+**Name** - GitHub Skills Test
 **Preparation** - This task need no preparation
 **Implementation** - The local repository was initialized. I also created an online repository on GitHub and connected the local one to the online repository. After filling the initialized repository with based folders/info (folder for the first task and screens, README.md, etc...), I committed and pushed these changes to the online repo.
 **Troubleshooting** - No troubles were faced.
